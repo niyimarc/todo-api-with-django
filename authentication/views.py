@@ -32,6 +32,8 @@ class AuthUserAPIView(GenericAPIView):
 
 
 class RegisterAPIView(GenericAPIView):
+    # all everyone to access this view
+    authentication_classes = []
     """
     View to register a new user.
 
@@ -58,6 +60,8 @@ class RegisterAPIView(GenericAPIView):
 
 
 class LoginAPIView(GenericAPIView):
+    # all everyone to access this view
+    authentication_classes = []
     """
     View to authenticate a user.
 
